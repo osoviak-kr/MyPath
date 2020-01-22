@@ -8,13 +8,13 @@ int mx_atoi(const char *str) {
 	output = 0;
 	while (mx_isspace(*str))
 		str++;
-	if (*str == '-') {
+	if (*str == '-'){
 		sign = -1;
 		str++;
 	}
 	else if (*str == '+')
 		str++;
-	while (mx_isdigit(*str)) {
+	while (mx_isdigit(*str)){
 		output = output * 10 + *str - '0';
 		str++;
 	}

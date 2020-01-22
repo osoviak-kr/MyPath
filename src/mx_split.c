@@ -9,14 +9,14 @@ char **mx_split(const char *s, char c) {
     char **arr_words = malloc((count_l + 1) * sizeof(char *));
     int p = 0;
     char *t;
-
+  
     for (int i = 0; i < count_l; i++) {
         t = mx_strdup(s + ((i > 0) ? 1 : 0));
         p = get_char_index(t, c);
         if (p == 0 && (t[1] != '\0'))
             arr_words[i] = mx_strncpy(mx_strnew(p + 1), t, 1);
         else if (t[1] == '\0')
-            arr_words[i] = NULL;
+           arr_words[i] = NULL;
         else if (p == -1 && t[0])
             arr_words[i] = mx_strdup(t);
         else  

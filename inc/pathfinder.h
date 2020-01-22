@@ -8,7 +8,7 @@
     #include <stdbool.h>
     #include <malloc/malloc.h>
 
-    #include "Libmx/inc/libmx.h"
+    #include "libmx/inc/libmx.h"
 
     #define INVALID_USAGE "usage: ./pathfinder [filename]\n"
     #define LINE1_IS_INVALID "error: line 1 is not valid\n"

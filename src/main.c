@@ -13,7 +13,7 @@ int main(int argc, char *argv[]) {
     for (int i = 0; i < b; i++) {
         for (int j = 0; j < b; j++) {
             if (i < j)
-                mx_find_all_paths(&stct, i, j);
+               mx_find_all_paths(&stct, i, j);
         }
     }
     return 0;

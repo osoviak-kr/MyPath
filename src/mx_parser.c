@@ -18,7 +18,7 @@ char **mx_parser(char *s, int j) {
     p_str[3] = NULL;
     if (!(check_name(p_str[0])) || !(check_name(p_str[1])) ||
         !(check_dist(p_str[2])) || (mx_strcmp(p_str[0], p_str[1]) == 0) ||
-        ((mx_strcmp(p_str[0], p_str[1]) != 0) && mx_atoi(p_str[2]) == 0))
+        ((mx_strcmp(p_str[0], p_str[1]) != 0) && mx_atoi(p_str[2]) == 0)) 
     {
         mx_del_strarr(&p_str);
         print_err_line_n(j + 1);
